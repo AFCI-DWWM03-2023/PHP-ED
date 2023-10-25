@@ -97,8 +97,21 @@ $jour = readline("Jour ? : ");
 $mois = readline("Mois ? : ");
 $annee = readline("Année ? : ");
 
-if (($annee % 4) == 0 and (($annee % 100) != 0) ^ (($annee % 400) == 0)):
+if (($annee % 4) == 0 and (($annee % 100) != 0) xor (($annee % 400) == 0)):
     echo "$annee est une année bissextile";
 else:
     echo "$annee n'est pas une année bissextile";
 endif;
+
+// echo "Ex 10 perso \n";
+
+// $ANNEE = 0;
+
+// while ($ANNEE != 100000){
+//     if (($ANNEE % 4) == 0 and (($ANNEE % 100) != 0) xor (($ANNEE % 400) == 0)):
+//         echo "$ANNEE est une année bissextile \n";
+//     else:
+//         echo "$ANNEE n'est pas une année bissextile \n";
+//     endif;
+//     $ANNEE++;
+// }
