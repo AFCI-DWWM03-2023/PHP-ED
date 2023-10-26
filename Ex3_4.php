@@ -1,13 +1,46 @@
 <?php
 
+echo "Ex1 \n";
+
+$nombre1 = readline("Nombre choisi ? : ");
+
+if ($nombre1 > 0):
+    echo "ton nombre est positif \n";
+else:
+    echo "ton nombre est négatif \n";
+endif;
+
+echo "Ex2 \n";
+
+$nombre21 = readline("1er nombre choisi ? : ");
+$nombre22 = readline("2eme nombre choisi ? : ");
+
+if ($nombre21 < 0 ^ $nombre22 < 0):
+    echo "le produit de tes 2 nombres est négatif";
+else:
+    echo "le produit de tes 2 nombres est positif";
+endif ;
+
+echo "Ex 3 \n";
+
+$nombre3 = readline("Nombre choisi ? : ");
+
+if ($nombre3 > 0):
+    echo "ton nombre est positif \n";
+elseif ($nombre3 < 0):
+    echo "ton nombre est négatif \n";
+else:
+    echo "ton nombre est nul \n";
+endif;
+
 echo "Ex 4 \n";
 
-$nombre1 = readline("Donne moi un premier nombre : ");
-$nombre2 = readline("Donne moi un deuxième nombre : ");
+$nombre41 = readline("Donne moi un premier nombre : ");
+$nombre42 = readline("Donne moi un deuxième nombre : ");
 
-if ($nombre1 == 0 || $nombre2 == 0) :
+if ($nombre41 == 0 || $nombre42 == 0) :
     echo "Le produit de tes nombres est nul <\n>";
-elseif ($nombre1 < 0 ^ $nombre2 < 0):
+elseif ($nombre41 < 0 ^ $nombre42 < 0):
     echo "Le produit de tes nombres est négatif <\n>";
 else:
     echo "Le produit de tes deux nombres est positif <\n>";
@@ -110,8 +143,6 @@ endif;
 // while ($ANNEE != 100000){
 //     if (($ANNEE % 4) == 0 and (($ANNEE % 100) != 0) xor (($ANNEE % 400) == 0)):
 //         echo "$ANNEE est une année bissextile \n";
-//     else:
-//         echo "$ANNEE n'est pas une année bissextile \n";
 //     endif;
 //     $ANNEE++;
 // }
